@@ -1,5 +1,8 @@
 class Url < ApplicationRecord
+  validates :decoded_url, presence: true
 
+  # bijective function that encodes integer into base62 string
+  # shuffeld characters of lowercase alphabet + uppercase alphabet + 0 -9
   CHARACTERS = 'rtYsk3i201XpTa5EyqGKQS6Mwu8BZmve7b9DOzNAfVd4FxHLCIUnhloRcJgWjP'.split(//)
 
   def create_slug(id)
