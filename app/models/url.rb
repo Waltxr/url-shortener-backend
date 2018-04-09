@@ -8,7 +8,7 @@ class Url < ApplicationRecord
     while id > 0
       s << CHARACTERS[id.modulo(base)]
       id /= base
-    end    
+    end
     self.slug = s.reverse
     self.save
   end
@@ -18,6 +18,10 @@ class Url < ApplicationRecord
     base = CHARACTERS.length
     slug.each_char { |c| i = i * base + CHARACTERS.index(c) }
     i
+  end
+
+  def increment_access_count
+    self.access_count += 1    
   end
 
 end
