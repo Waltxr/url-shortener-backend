@@ -1,5 +1,6 @@
 require 'net/http'
 require 'json'
+require 'resolv-replace'
 
 class DatabaseSeedBot
 
@@ -9,7 +10,7 @@ class DatabaseSeedBot
       @new_url = Url.create!({decoded_url: 'http://' + village['name']})
       id = @new_url.id
       @new_url.create_slug(id)
-      @new_url.access_count = (1..100).to_a.sample      
+      @new_url.access_count = (1..100).to_a.sample
       @new_url.save
     end
   end
