@@ -17,8 +17,6 @@ class Api::V1::UrlsController < ApplicationController
       @url.increment_access_count
       @url.save
       redirect_to @url.decoded_url
-    else
-      redirect_to 'http://localhost:3001/'
     end
   end
 
