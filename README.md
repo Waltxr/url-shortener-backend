@@ -1,6 +1,6 @@
 # README
 
-URl Shortener Backend
+Url Shortener Backend
 Rails API with endpoints that allow frontend to shorten urls and keep track of how many times the shortened url is accessed.
 
 Installation
