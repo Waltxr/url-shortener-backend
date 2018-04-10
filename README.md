@@ -11,7 +11,9 @@ Rails API with endpoints that allow frontend to shorten urls and keep track of h
 3. In your terminal run `rails db:create` then `rails db:migrate`
 4. Run 'rails s' in your terminal and the app is ready to be used with the frontend which you can find here: https://github.com/Waltxr/url-shortener-frontend
 
-# Seeding Database
+# Seeding the Database
 1. `cd` to the project root folder
 2. run `rails c` in your terminal
 3. run `DatabaseSeedBot.run` in your terminal
+
+This uses data from the Non-.gov URLs APi <https://search.gov/developer/govt-urls.html>
