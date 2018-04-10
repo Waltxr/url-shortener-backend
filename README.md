@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+URl Shortener Backend
+Rails API with endpoints that allow frontend to shorten urls and keep track of how many times the shortened url is accessed.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Installation
+Fork/Clone this repo to your machine
+cd to this project folder
+In your terminal run `rails db:create` then `rails db:migrate`
+Then run 'rails s' in your terminal and the app is ready to be used with the frontend.
