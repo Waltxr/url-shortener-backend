@@ -1,5 +1,5 @@
 class Url < ApplicationRecord
-  validates :decoded_url, presence: true
+  validates :decoded_url, presence: true, url: true
 
   # bijective function that encodes integer into base62 string
   # shuffeld characters of lowercase alphabet + uppercase alphabet + 0 -9
