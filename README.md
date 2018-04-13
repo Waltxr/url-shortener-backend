@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Url Shortener Backend
+Rails API with endpoints that allow frontend to shorten urls and keep track of how many times the shortened url is accessed.
 
-Things you may want to cover:
+<http://shortenurll.s3-website-us-east-1.amazonaws.com/>
 
-* Ruby version
+# Installation
+1. Fork/Clone this repo to your machine
+2. `cd` to this project folder
+3. In your terminal run `rails db:create` then `rails db:migrate`
+4. Run 'rails s' in your terminal and the app is ready to be used with the frontend which you can find here: https://github.com/Waltxr/url-shortener-frontend
 
-* System dependencies
+# Seeding the Database
+1. `cd` to the project root folder
+2. run `rails c` in your terminal
+3. run `DatabaseSeedBot.run` in your terminal
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This uses data from the Non-.gov URLs APi <https://search.gov/developer/govt-urls.html>
