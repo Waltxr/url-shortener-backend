@@ -8,6 +8,7 @@ class Api::V1::UrlsController < ApplicationController
         @url.create_slug(id)
         render json: @url
       else
+        render json: {errors: @url.errors.full_messages}
       end
   end
 
