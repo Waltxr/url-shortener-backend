@@ -5,7 +5,7 @@ class Url < ApplicationRecord
   # shuffeld characters of lowercase alphabet + uppercase alphabet + 0 -9
   CHARACTERS = 'rtYsk3i201XpTa5EyqGKQS6Mwu8BZmve7b9DOzNAfVd4FxHLCIUnhloRcJgWjP'.split(//)
 
-  def create_slug(id)    
+  def create_slug(id)
     s = ''
     base = CHARACTERS.length
     while id > 0
