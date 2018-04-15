@@ -6,6 +6,7 @@ class Url < ApplicationRecord
   CHARACTERS = 'rtYsk3i201XpTa5EyqGKQS6Mwu8BZmve7b9DOzNAfVd4FxHLCIUnhloRcJgWjP'.split(//)
 
   def create_slug(id)
+    debugger
     s = ''
     base = CHARACTERS.length
     while id > 0
