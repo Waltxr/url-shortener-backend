@@ -2,7 +2,7 @@ class Api::V1::UrlsController < ApplicationController
 
 
   def create
-      @url = Url.new(url_params['decoded_url'])
+      @url = Url.new(url_params)
       if @url.save
         id = @url.id
         @url.create_slug(id)
@@ -27,7 +27,7 @@ class Api::V1::UrlsController < ApplicationController
 
   private
   def url_params
-    params.require(:url).permit!
+    params.require(:decoded_url).permit(:decoded_url)
   end
 
 end
